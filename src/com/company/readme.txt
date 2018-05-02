@@ -50,14 +50,17 @@ studentData and transform it into two parts, the exam and the answers. The
 process would build the exam line by line and the answers line by line and
 then report the values in a CSV. Similar issues occured during homework 4.
 
-ISSUES: Exam does not properly rebuild from a data file that is not exactly to
+SPECIFICS: Exam does not properly rebuild from a data file that is not exactly to
 the description. When it does build the questions class can sometimes fail if
 there was a MCMAQuestion due to the commidation needed for the ExamBuilder.
 Report values was not thoroughly tested because of this.
 
 During testing, several issues concerning the base files will appear. My ExamGrader program 
 will read through a student file and create an examfile from the first line of that student file,
-but the grading will not work without changing the contents of another students application. 
+but the grading will not work without changing the contents of another students application.
+
+A console print will occur after pressing the feedback button, this has no impact on this program
+and is something that another student is using.
 
 This application was assumed to be run from an IDE, specifically from IntelliJ IDEA.
 
